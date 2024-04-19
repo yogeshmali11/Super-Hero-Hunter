@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super-Hero Hunter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="input-section">
+            <div>
+                <input type="text" id="superHeroName" placeholder="Search for a Superhero" onkeyup="displayList()">
+                <button onclick="searchSuperHero()">Search</button>
+            </div>  
+            <div>
+                <button id="fav" onclick="favPage()">Favourites</button>
+            </div>
+        </div>
+        <div id="suggestion-container">
+            <ul id="suggestionList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="fav.js"></script>
+
+</body>
+</html>

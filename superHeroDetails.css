@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+body{
+    background-image: url('bg-img2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: rgb(13, 1, 1);
+}
+#detailsContainer{
+    width: 700px;
+    border: 2px solid black;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: 12px 12px 24px 12px rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+}
+#superhero-details{
+    display: flex;
+    gap: 40px;
+    text-align: left;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 500;
+}
+#detailsContainer img{
+    height: 300px;
+}
+button{
+    margin-top: 20px;
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+h2{
+    font-family: "Rubik Scribble", system-ui;
+    padding: 8px;
+    color: white;
+    font-weight: 900;
+    background-color: black;
+}
+h3{
+    color: white;
+}
+#backBtn{
+    margin-left: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 0px 8px 0px 8px;
+    padding: 4px 25px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+    body{
+        background-image: url('portrait-img.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-color: rgb(4, 4, 25);
+        margin: 0;
+    }
+    #detailsContainer{
+        width: 90%;
+        border: none;
+        margin: 0px;
+        padding: 20px;
+        text-align: center;
+        background-color: transparent;
+        backdrop-filter: blur(3px);
+        box-shadow: 12px 12px 24px 12px rgba(0, 0, 0, 0.6);
+        border-radius: 0px;
+        margin-top: 10px;
+        height: 102%;
+    }
+    #superhero-details{
+        display: block;
+        gap: 40px;
+        text-align: center;
+        color: whitesmoke;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    #desc{
+        text-align: left;
+    }
+   
+    #backBtn{
+        margin-left: 30px;
+        background-color: black;
+        color: white;
+        border-radius: 0px 8px 0px 8px;
+        padding: 4px 25px;
+        cursor: pointer;
+    }
+    #detailsContainer h3{
+        color: black;
+    }
+      
+  }
